@@ -1,0 +1,52 @@
+{
+  "books": [
+    {
+      "title": "Brave New World",
+      "author": "Oldos Haskly",
+      "pages": "360",
+      "descriptionURL": "#",
+      "tags": [
+        "#суперкгнига",
+        "#программирование"
+      ],
+      "coverURL": "images/book-cover.jpg",
+      "rating": "35"
+    },
+    {
+      "title": "Brave New World",
+      "author": "Oldos Haskly",
+      "pages": "360",
+      "descriptionURL": "#",
+      "tags": [
+        "#суперкгнига",
+        "#программирование"
+      ],
+      "coverURL": "images/book-cover.jpg",
+      "rating": "90"
+    },
+    {
+      "title": "Brave New World",
+      "author": "Oldos Haskly",
+      "pages": "360",
+      "descriptionURL": "#",
+      "tags": [
+        "#суперкгнига",
+        "#программирование"
+      ],
+      "coverURL": "images/book-cover.jpg",
+      "rating": "10"
+    },
+    {
+      "title": "Brave New World",
+      "author": "Oldos Haskly",
+      "pages": "360",
+      "descriptionURL": "#",
+      "tags": [
+        "#суперкгнига",
+        "#программирование"
+      ],
+      "coverURL": "images/book-cover.jpg",
+      "rating": "60"
+    }
+  ]
+}
