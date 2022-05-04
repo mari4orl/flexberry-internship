@@ -1,52 +1,56 @@
 {
   "books": [
     {
-      "title": "Brave New World",
-      "author": "Oldos Haskly",
-      "pages": "360",
+      "title": "Little Women",
+      "author": "Louisa May Alcott",
+      "pages": "449",
       "descriptionURL": "#",
       "tags": [
         "#суперкгнига",
         "#программирование"
       ],
       "coverURL": "images/book-cover.jpg",
-      "rating": "35"
+      "rating": "35",
+      "id": "1"
     },
     {
-      "title": "Brave New World",
-      "author": "Oldos Haskly",
-      "pages": "360",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "pages": "336",
       "descriptionURL": "#",
       "tags": [
         "#суперкгнига",
         "#программирование"
       ],
       "coverURL": "images/book-cover.jpg",
-      "rating": "90"
+      "rating": "90",
+      "id": "2"
     },
     {
-      "title": "Brave New World",
-      "author": "Oldos Haskly",
-      "pages": "360",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "pages": "279",
       "descriptionURL": "#",
       "tags": [
         "#суперкгнига",
         "#программирование"
       ],
       "coverURL": "images/book-cover.jpg",
-      "rating": "10"
+      "rating": "10",
+      "id": "3"
     },
     {
-      "title": "Brave New World",
-      "author": "Oldos Haskly",
-      "pages": "360",
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "pages": "194",
       "descriptionURL": "#",
       "tags": [
         "#суперкгнига",
         "#программирование"
       ],
       "coverURL": "images/book-cover.jpg",
-      "rating": "60"
+      "rating": "60",
+      "id": "4"
     }
   ]
 }
