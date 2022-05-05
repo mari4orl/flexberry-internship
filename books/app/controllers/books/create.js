@@ -13,18 +13,15 @@ export default Controller.extend({
           author: this.get('author'),
           pages: this.get('pages'),
           coverURL: this.get('coverURL'),
-          descriURL: this.get('descriURL'),
+          descriptionURL: this.get('descriptionURL'),
           tags: this.get('tags')
         });
 
-        // this.transitionToRoute('books.index');
+        this.transitionToRoute('books.index');
       // }
       // catch(e){
       //   this.send('error', new Error('Connection failed'));
       // }
-    },
-    // changeTitle(title) {
-    //   this.set('title', title)
-    // }
+    }
   }
 });
