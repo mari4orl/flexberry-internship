@@ -12,5 +12,15 @@ export default Service.extend({
 
   deleteBook(books) {
     return fetch(`${ENV.backendURL}/books/${books.id}`, { method: 'DELETE'});
+  },
+
+  createBook(book) {
+    return fetch(`${ENV.backendURL}/books`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(book)
+    });
   }
 });
