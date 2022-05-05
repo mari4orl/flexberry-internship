@@ -22,16 +22,6 @@
         </form>
       </div>
     </div>
-    <div class="row row-cols-1 row-cols-md-3 fix-margin">
-      {{#each model as |book|}}
-        <div class="col mb-4">
-          <div class="card">
-            {{book-item coverURL=book.coverURL title=book.title author=book.author pages=book.pages rating=book.rating id=book.id}}
-          </div>
-        </div>
-      {{/each}}
-    </div>
+    {{outlet}}
   </div>
 </div>
-
-{{outlet}}
