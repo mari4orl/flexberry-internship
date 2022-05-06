@@ -18,5 +18,11 @@ export default Route.extend({
         }
       }, 1000);
     });
+  },
+
+  actions: {
+    refreshRoute() {
+      this.refresh();
+    }
   }
 });

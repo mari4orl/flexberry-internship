@@ -2,7 +2,7 @@
   {{#each model as |book|}}
     <div class="col mb-4">
       <div class="card">
-        {{books-item coverURL=book.coverURL title=book.title author=book.author pages=book.pages rating=book.rating id=book.id}}
+        {{book-item book=book coverURL=book.coverURL title=book.title author=book.author pages=book.pages rating=book.rating id=book.id deleteBook=(action "deleteBook")}}
       </div>
     </div>
   {{/each}}
