@@ -1,63 +1,8 @@
 <div class="container h-100">
   <div class="htop">
     <h2 class="text-center">Создание книги: {{model.title}}</h2>
-    <form class="edit-form" onsubmit={{action "saveBook"}}>
-      <div class="form-group row">
-        <label for="inputTitle" class="col-sm-2 col-form-label text-right">Название</label>
-        <div class="col-sm-10">
-          {{input type="text" id="inputTitle" value=title class="form-control form-control-lg" placeholder="Полное название книги"}}
-        </div>
-      </div>
 
-      <div class="form-group row">
-        <label for="inputAuthor" class="col-sm-2 col-form-label text-right">Автор</label>
-        <div class="col-sm-10">
-          {{input type="text" id="inputAuthor" value=author class="form-control form-control-lg" placeholder="Полное название книги"}}
-        </div>
-      </div>
+    {{book-form book=book onsubmit=(action "saveBook")}}
 
-      <div class="form-group row">
-        <label for="inputPagesCount" class="col-sm-2 col-form-label text-right">Объем</label>
-        <div class="col-sm-10">
-          {{input type="number" id="inputPagesCount" value=pages class="form-control form-control-lg" placeholder="Количество страниц книги"}}
-        </div>
-      </div>
-
-      <div class="form-group row">
-        <label for="inputDescriptionURL" class="col-sm-2 col-form-label text-right">Описание</label>
-        <div class="col-sm-10">
-          {{input type="url" value=descriptionURL class="form-control form-control-lg" id="inputDescriptionURL" placeholder="Ссылка на сайт с описанием книги"}}
-        </div>
-      </div>
-
-      <div class="form-group row">
-        <label for="customFile" class="col-sm-2 col-form-label text-right">Обложка</label>
-        <div class="input-group input-group-lg col-sm-10">
-          <div class="custom-file">
-            <input type="file" class="custom-file-input" id="customFile" lang="ru">
-            <label class="custom-file-label form-control-lg placeholder-color" for="customFile" data-browse="Выбрать">Выберите файл</label>
-          </div>
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary custom-file-clear" type="button" disabled="disabled">X</button>
-          </div>
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputTags" class="col-sm-2 col-form-label text-right">Теги</label>
-        <div class="col-sm-10">
-          {{input type="text" value=tags id="inputTags" class="form-control form-control-lg" placeholder="#Теги через запятую"}}
-          <select multiple="multiple" data-role="tagsinput" style="display: none;" id="inputTags">
-            <option value="суперкнига" selected="selected">суперкнига</option>
-            <option value="программирование" selected="selected">программирование</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-group row">
-        <div class="col-12 text-right">
-          <button type="submit" class="btn btn-primary btn-lg">Сохранить</button>
-          {{#link-to "books.index" class="btn btn-outline-secondary btn-lg" }}Отмена{{/link-to}}
-        </div>
-      </div>
-    </form>
   </div>
 </div>

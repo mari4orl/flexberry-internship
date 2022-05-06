@@ -1,21 +1,24 @@
 import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
+import EmberObject from '@ember/object';
 
 export default Controller.extend({
+  init() {
+    this._super(...arguments);
+    this.set('book', EmberObject.create());
+    this.get('book').set('title', '');
+    this.get('book').set('author', '');
+    this.get('book').set('pages', '');
+    this.get('book').set('coverURL', '');
+    this.get('book').set('descriptionURL', '');
+    this.get('book').set('tags', '');
+  },
+
   dataService: service('data'),
   actions: {
-    async saveBook(e) {
+    async saveBook(book) {
       // try {
-        e.preventDefault();
-
-        await this.get('dataService').createBook({
-          title: this.get('title'),
-          author: this.get('author'),
-          pages: this.get('pages'),
-          coverURL: this.get('coverURL'),
-          descriptionURL: this.get('descriptionURL'),
-          tags: this.get('tags')
-        });
+        await this.get('dataService').createBook(book);
 
         this.transitionToRoute('books.index');
       // }

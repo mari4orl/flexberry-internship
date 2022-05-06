@@ -22,5 +22,15 @@ export default Service.extend({
       },
       body: JSON.stringify(book)
     });
+  },
+
+  updateBook(book) {
+    return fetch(`${ENV.backendURL}/books/${book.id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(book)
+    });
   }
 });

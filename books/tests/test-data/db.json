@@ -53,8 +53,10 @@
       "id": "4"
     },
     {
-      "title": "ffdf",
-      "id": "6Qz7dri"
+      "title": "Dracula",
+      "id": "6Qz7dri",
+      "author": "Bram Stoker",
+      "pages": "418"
     },
     {
       "title": "ddd",
@@ -76,6 +78,15 @@
       "author": "author",
       "coverURL": "https://www.youtube.com/watch?v=KFv1oYF9GJM",
       "id": "XD0qEKv"
+    },
+    {
+      "title": "Harry Potter",
+      "author": "J.K.Rowling",
+      "pages": "500",
+      "coverURL": "",
+      "descriptionURL": "",
+      "tags": "",
+      "id": "GcLwdQ1"
     }
   ]
 }
