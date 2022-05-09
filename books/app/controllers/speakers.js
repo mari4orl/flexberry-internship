@@ -6,9 +6,9 @@ export default Controller.extend({
   search: '',
   dataService: service('data'),
   actions: {
-    async deleteBook(book) {
+    async deleteSpeaker(speaker) {
       try {
-        await this.get('dataService').deleteBook(book);
+        await this.get('dataService').deleteSpeaker(speaker);
         this.send('refreshRoute');
       }
       catch(e) {
