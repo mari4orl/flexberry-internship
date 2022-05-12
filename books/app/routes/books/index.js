@@ -8,6 +8,9 @@ export default Route.extend({
   queryParams: {
     search: {
       refreshModel: true
+    },
+    tag_like: {
+      refreshModel: true
     }
   },
 

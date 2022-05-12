@@ -14,17 +14,23 @@
   </div>
   <div class="col-md-auto">
     <form class="form-inline">
-      <input class="form-control mr-2" type="search" placeholder="Поиск по тегам" aria-label="Найти по тегам">
+      {{input class="form-control mr-2" type="search" value=tag_like placeholder="Поиск по тегам" aria-label="Найти по тегам"}}
       <button class="btn btn-primary my-2" type="submit">Поиск</button>
     </form>
   </div>
 </div>
-<div class="row row-cols-1 row-cols-md-3 fix-margin">
-  {{#each model as |book|}}
-    <div class="col mb-4">
-      <div class="card">
-        {{book-item book=book coverURL=book.coverURL title=book.title author=book.author pages=book.pages rating=book.rating id=book.id deleteBook=(action "deleteBook")}}
+{{#if isLoading}}
+  <div class="text-center">
+    <img src="/images/loading.gif" alt="loading" />
+  </div>
+{{else}}
+  <div class="row row-cols-1 row-cols-md-3 fix-margin">
+    {{#each model as |book|}}
+      <div class="col mb-4">
+        <div class="card">
+          {{book-item book=book coverURL=book.coverURL title=book.title author=book.author pages=book.pages rating=book.rating id=book.id deleteBook=(action "deleteBook")}}
+        </div>
       </div>
-    </div>
-  {{/each}}
-</div>
+    {{/each}}
+  </div>
+{{/if}}
