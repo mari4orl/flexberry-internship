@@ -1,21 +1,19 @@
 {
   "books": [
     {
-      "title": "Little Women",
+      "title": "Little Women1",
+      "type": "book",
       "author": "Louisa May Alcott",
       "pages": "449",
       "descriptionURL": "https://www.npmjs.com/package/blueimp-file-upload",
-      "tags": [
-        "#суперкгнига",
-        "555",
-        "666"
-      ],
+      "tags": "#суперкгнига,555,666",
       "coverURL": "images/book-cover.jpg",
       "rating": "35",
       "id": 1
     },
     {
       "title": "To Kill a Mockingbird",
+      "type": "book",
       "author": "Harper Lee",
       "pages": "336",
       "descriptionURL": "#",
@@ -29,6 +27,7 @@
     },
     {
       "title": "Fahrenheit 451",
+      "type": "book",
       "author": "Ray Bradbury",
       "pages": "194",
       "descriptionURL": "https://www.youtube.com/watch?v=UJDRLoe2KEc",
@@ -43,12 +42,14 @@
     },
     {
       "title": "Dracula",
+      "type": "book",
       "id": 10,
       "author": "Bram Stoker",
       "pages": "418"
     },
     {
       "title": "Harry Potter",
+      "type": "book",
       "author": "J.K.Rowling",
       "pages": "550",
       "coverURL": "",
@@ -58,6 +59,7 @@
     },
     {
       "title": "Witcher",
+      "type": "book",
       "author": "Andjey Sapkovskiy",
       "pages": "300",
       "coverURL": "",
@@ -68,16 +70,18 @@
     {
       "title": "War and Peace",
       "author": "Tolstoy",
-      "pages": "500000",
+      "pages": "500",
       "coverURL": "",
       "descriptionURL": "",
       "tags": "",
+      "type": "book",
       "id": 13
     }
   ],
   "speakers": [
     {
       "name": "Rachel",
+      "type": "speaker",
       "surname": "Greene",
       "patronymic": "Karen",
       "coverURL": "images/speaker.jpg",
@@ -85,6 +89,7 @@
     },
     {
       "name": "Monica",
+      "type": "speaker",
       "surname": "Geller",
       "patronymic": "E.",
       "coverURL": "images/speaker.jpg",
@@ -92,6 +97,7 @@
     },
     {
       "name": "Phoebe",
+      "type": "speaker",
       "surname": "Buffay",
       "patronymic": "",
       "coverURL": "images/speaker.jpg",
@@ -99,6 +105,7 @@
     },
     {
       "name": "Chandler",
+      "type": "speaker",
       "surname": "Bing",
       "patronymic": "Muriel",
       "coverURL": "images/speaker.jpg",
@@ -106,6 +113,7 @@
     },
     {
       "name": "Ross",
+      "type": "speaker",
       "surname": "Geller",
       "patronymic": "",
       "coverURL": "images/speaker.jpg",
@@ -113,6 +121,7 @@
     },
     {
       "name": "Joey",
+      "type": "speaker",
       "surname": "Tribbiani ",
       "patronymic": "Francis ",
       "coverURL": "images/speaker.jpg",

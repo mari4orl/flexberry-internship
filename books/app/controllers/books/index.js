@@ -9,11 +9,12 @@ export default Controller.extend({
   actions: {
     async deleteBook(book) {
       try {
-        await this.get('dataService').deleteBook(book);
-        this.send('refreshRoute');
+        await book.destroyRecord('book');
+
+        // this.send('refreshRoute');
       }
       catch(e) {
-        this.send('error', new Error('Connection failed'));
+        // this.send('error', new Error('Connection failed'));
       }
     }
   }

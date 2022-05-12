@@ -7,14 +7,9 @@ export default Controller.extend({
   actions: {
     async saveBook(book) {
       // try {
-        const uploadData = get(this, 'uploadData');
-        await this.get('dataService').createBook(book, uploadData);
-        this.get('model').set('title', book.title);
-        this.get('model').set('author', book.author);
-        this.get('model').set('pages', book.pages);
-        this.get('model').set('coverURL', book.coverURL);
-        this.get('model').set('descriptionURL', book.descriptionURL);
-        this.get('model').set('tags', book.tags);
+
+        let newBook = this.get('store').createRecord('book', book);
+        await newBook.save();
 
         this.transitionToRoute('books.index');
       // }
@@ -24,7 +19,7 @@ export default Controller.extend({
     },
 
     changeUploadData(uploadData) {
-      set(this, 'uploadData', uploadData);
+      // set(this, 'uploadData', uploadData);
     }
   },
 });
