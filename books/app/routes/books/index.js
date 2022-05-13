@@ -48,11 +48,11 @@ export default Route.extend({
   // },
 
   actions: {
-    refreshRoute() {
+    // refreshRoute() {
       // this.refresh();
-    },
-    // loading() {
-    //   return false;
-    // }
+    // },
+    loading() {
+      return false;
+    }
   }
 });

@@ -43,6 +43,7 @@
     "ember-source": "~3.1.0",
     "ember-welcome-page": "^3.0.0",
     "eslint-plugin-ember": "^5.0.0",
+    "json-server": "^0.12.2",
     "loader.js": "^4.2.3",
     "sass": "^1.51.0"
   },
@@ -51,7 +52,6 @@
   },
   "dependencies": {
     "blueimp-file-upload": "^10.32.0",
-    "json-server": "^0.12.2",
     "multer": "^1.4.4"
   }
 }

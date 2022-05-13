@@ -1,1 +1,136 @@
-{}
+{
+  "books": [
+    {
+      "title": "Little Women",
+      "author": "Louisa May Alcott",
+      "pages": "449",
+      "descriptionURL": "https://www.npmjs.com/package/blueimp-file-upload",
+      "tags": "#суперкгнига,555,666",
+      "coverURL": "images/book-cover.jpg",
+      "rating": "35",
+      "id": 1
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "pages": "336",
+      "descriptionURL": "#",
+      "tags": [
+        "#суперкгнига",
+        "#программирование"
+      ],
+      "coverURL": "images/book-cover.jpg",
+      "rating": "90",
+      "id": 2
+    },
+    {
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "pages": "194",
+      "descriptionURL": "https://www.youtube.com/watch?v=UJDRLoe2KEc",
+      "tags": [
+        "#суперкгнига",
+        "#программирование",
+        "#sci-fi"
+      ],
+      "coverURL": "images/book-cover.jpg",
+      "rating": "60",
+      "id": 4
+    },
+    {
+      "title": "Dracula",
+      "id": 10,
+      "author": "Bram Stoker",
+      "pages": "418"
+    },
+    {
+      "title": "Harry Potter",
+      "author": "J.K.Rowling",
+      "pages": "550",
+      "coverURL": "",
+      "descriptionURL": "",
+      "tags": "",
+      "id": 11
+    },
+    {
+      "title": "Witcher",
+      "author": "Andjey Sapkovskiy",
+      "pages": "300",
+      "coverURL": "",
+      "descriptionURL": "",
+      "tags": "",
+      "id": 12
+    },
+    {
+      "title": "War and Peace",
+      "author": "Tolstoy",
+      "pages": "50000",
+      "coverURL": "",
+      "descriptionURL": "",
+      "tags": "",
+      "id": 13
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J. R. R. Tolkien",
+      "pages": "366",
+      "coverURL": "",
+      "descriptionURL": "",
+      "tags": "",
+      "id": 14
+    },
+    {
+      "title": "book",
+      "author": "ffdf",
+      "pages": "",
+      "coverURL": "",
+      "descriptionURL": "",
+      "tags": "",
+      "id": 15
+    }
+  ],
+  "speakers": [
+    {
+      "name": "Rachel",
+      "surname": "Greene",
+      "patronymic": "Karen",
+      "coverURL": "images/speaker.jpg",
+      "id": 1
+    },
+    {
+      "name": "Monica",
+      "surname": "Geller",
+      "patronymic": "E.",
+      "coverURL": "images/speaker.jpg",
+      "id": 2
+    },
+    {
+      "name": "Phoebe",
+      "surname": "Buffay",
+      "patronymic": "",
+      "coverURL": "images/speaker.jpg",
+      "id": 3
+    },
+    {
+      "name": "Chandler",
+      "surname": "Bing",
+      "patronymic": "Muriel",
+      "coverURL": "images/speaker.jpg",
+      "id": 4
+    },
+    {
+      "name": "Ross",
+      "surname": "Geller",
+      "patronymic": "",
+      "coverURL": "images/speaker.jpg",
+      "id": 5
+    },
+    {
+      "name": "Joey",
+      "surname": "Tribbiani ",
+      "patronymic": "Francis ",
+      "coverURL": "images/speaker.jpg",
+      "id": 6
+    }
+  ]
+}

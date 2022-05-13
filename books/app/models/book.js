@@ -6,5 +6,5 @@ export default DS.Model.extend({
   pages: DS.attr('string'),
   coverURL: DS.attr('string'),
   descriptionURL: DS.attr('string'),
-  tags: DS.attr('string')
+  tags: DS.attr()
 });
