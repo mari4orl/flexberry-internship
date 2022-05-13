@@ -19,6 +19,7 @@ Router.map(function() {
   });
   this.route('404', { path: '*path'});
   this.route('error', { path: '*/:error'});
+  this.route('meeting', { path: '/meetings' });
 });
 
 export default Router;

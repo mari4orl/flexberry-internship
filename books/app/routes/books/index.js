@@ -9,12 +9,12 @@ export default Route.extend({
     search: {
       refreshModel: true
     },
-    tag_like: {
+    searchByTag: {
       refreshModel: true
     }
   },
 
-  model({ search }) {
+  model() {
     // let promise = new Promise((resolve, reject) => {
     //   later(async () => {
     //     try {
