@@ -2,6 +2,7 @@ import Route from '@ember/routing/route';
 import { Promise } from 'rsvp';
 import { later } from '@ember/runloop';
 import { inject as service } from '@ember/service';
+import { set } from '@ember/object';
 
 export default Route.extend({
   dataService: service('data'),
@@ -44,6 +45,8 @@ export default Route.extend({
     if (this.get('modelPromise')) {
       controller.set('isLoading', true);
     }
+    set(controller, 'tags', []);
+    set(controller, 'uploadData', null);
   },
 
   actions: {
