@@ -13,13 +13,12 @@ Router.map(function() {
     this.route('edit', { path: '/:id/edit' });
   });
   this.route('edit-book', { path: '/:id/edit-book' });
-  this.route('speakers', { path: '/speakers' }, function() {
-    this.route('edit', { path: '/:id/edit' });
-    this.route('create');
-  });
+  this.route('speakers', { path: '/speakers' });
   this.route('404', { path: '*path'});
   this.route('error', { path: '*/:error'});
   this.route('meeting', { path: '/meetings' });
+  this.route('speaker-edit', { path: '/:id/speakers-edit' });
+  this.route('speaker-create');
 });
 
 export default Router;

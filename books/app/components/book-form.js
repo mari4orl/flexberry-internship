@@ -19,6 +19,10 @@ export default Component.extend({
         descriptionURL: this.get('descriptionURL'),
         tags: this.get('tags')
       });
+    },
+
+    changeUploadData(uploadData) {
+      set(this, 'uploadData', uploadData);
     }
   },
 

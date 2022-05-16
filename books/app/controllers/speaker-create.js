@@ -11,7 +11,7 @@ export default Controller.extend({
       this.get('model').set('patronymic', speaker.patronymic);
       this.get('model').set('coverURL', speaker.coverURL);
 
-      this.transitionToRoute('speaker.index');
+      this.transitionToRoute('speakers');
     }
   }
 });
