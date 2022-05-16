@@ -9,7 +9,7 @@ export default Route.extend({
       pages: '',
       coverURL: '',
       descriptionURL: '',
-      tags: ''
+      tags: []
     });
   }
 });

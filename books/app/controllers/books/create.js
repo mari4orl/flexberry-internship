@@ -1,6 +1,6 @@
 import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
-import { get, set } from '@ember/object';
+import { get } from '@ember/object';
 
 export default Controller.extend({
   dataService: service('data'),
@@ -23,8 +23,5 @@ export default Controller.extend({
       // }
     },
 
-    changeUploadData(uploadData) {
-      set(this, 'uploadData', uploadData);
-    }
   },
 });

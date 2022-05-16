@@ -19,6 +19,8 @@ Router.map(function() {
   });
   this.route('404', { path: '*path'});
   this.route('error', { path: '*/:error'});
+  this.route('speaker-edit', { path: '/:id/speakers-edit' });
+  this.route('speaker-create');
 });
 
 export default Router;
