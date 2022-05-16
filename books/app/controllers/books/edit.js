@@ -1,13 +1,11 @@
 import Controller from '@ember/controller';
-import { inject as service } from '@ember/service';
 import { get } from '@ember/object';
 
 export default Controller.extend({
-  dataService: service('data'),
 
   actions: {
     async saveBook(book) {
-      // const uploadData = get(this, 'uploadData');
+      const uploadData = get(this, 'uploadData');
       let bookModel = this.get('model');
       bookModel.set('title', book.title);
       bookModel.set('author', book.author);

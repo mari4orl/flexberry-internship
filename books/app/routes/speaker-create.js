@@ -6,8 +6,7 @@ export default Route.extend({
     return EmberObject.create({
       name: '',
       surname: '',
-      patronymic: '',
-      coverURL: ''
+      patronymic: ''
     });
   }
 });

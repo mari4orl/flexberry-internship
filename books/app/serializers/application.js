@@ -14,11 +14,16 @@ export default DS.JSONSerializer.extend({
     return this._super(...arguments);
   },
 
-  serializeBelongsTo(snapshot, json, relationship) {
-    let key = relationship.key;
-    let belongsTo = snapshot.belongsTo(key);
+  extractRelationship(relationshipModelName, relationshipHash) {
+    let hash = relationshipHash.id ? relationshipHash.id : relationshipHash;
+    return this._super.call(this, relationshipModelName, hash);
+  },
 
-    key = this.keyForRelationship ? this.keyForRelationship(key, "belongsTo", "serialize") : key;
-    json[key] = isNone(belongsTo) ? belongsTo : parseInt(belongsTo.record.get('id'));
-  }
+  // serializeBelongsTo(snapshot, json, relationship) {
+  //   let key = relationship.key;
+  //   let belongsTo = snapshot.belongsTo(key);
+
+  //   key = this.keyForRelationship ? this.keyForRelationship(key, "belongsTo", "serialize") : key;
+  //   json[key] = isNone(belongsTo) ? belongsTo : parseInt(belongsTo.record.get('id'));
+  // }
 });
