@@ -50,7 +50,8 @@
         "#суперкгнига",
         "#программирование",
         "#sci-fi"
-      ]
+      ],
+      "coverURL": "/uploads/03930026-1652784301793.JPG"
     },
     {
       "title": "Harry Potter",
@@ -82,7 +83,7 @@
       "title": "War and Peace",
       "author": "Tolstoy",
       "pages": "500000",
-      "coverURL": "",
+      "coverURL": "/uploads/03930015-1652784267759.JPG",
       "descriptionURL": "",
       "tags": [
         "#суперкгнига",
@@ -93,16 +94,37 @@
       "id": 13
     },
     {
-      "title": "The Hobbit1",
+      "title": "The Hobbit",
       "author": "J. R. R. Tolkien",
       "pages": "360",
-      "coverURL": "",
+      "coverURL": "/uploads/03930007-1652783611680.JPG",
       "descriptionURL": "",
       "tags": [
         "#fantasy",
         "#lit"
       ],
       "id": 14
+    },
+    {
+      "title": "sss",
+      "author": "ffdf",
+      "pages": "",
+      "coverURL": "/uploads/03930035-1652782925303.JPG",
+      "descriptionURL": "",
+      "tags": [],
+      "id": 15
+    },
+    {
+      "title": "",
+      "author": "",
+      "pages": "",
+      "coverURL": "/uploads/03930001-1652784330383.JPG",
+      "descriptionURL": "",
+      "tags": [
+        "#eee",
+        "#fdfgd"
+      ],
+      "id": 16
     }
   ],
   "speakers": [
@@ -147,6 +169,12 @@
       "patronymic": "Francis ",
       "coverURL": "images/speaker.jpg",
       "id": 6
+    },
+    {
+      "name": "Parker",
+      "surname": "Piter1",
+      "patronymic": "",
+      "id": 7
     }
   ]
 }

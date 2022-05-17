@@ -2,9 +2,9 @@ import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 
 export default Controller.extend({
-  queryParams: ['search', 'tags_like'],
+  queryParams: ['search', 'searchByTag'],
   search: '',
-  tags_like: '',
+  searchByTag: '',
   dataService: service('data'),
   actions: {
     async deleteBook(book) {
