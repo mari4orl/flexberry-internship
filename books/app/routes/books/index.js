@@ -10,7 +10,7 @@ export default Route.extend({
     search: {
       refreshModel: true
     },
-    tag_like: {
+    tags_like: {
       refreshModel: true
     }
   },
