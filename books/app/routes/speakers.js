@@ -9,7 +9,7 @@ export default Route.extend({
     }
   },
 
-  model() {
+  model({ search }) {
     // let promise = new Promise((resolve, reject) => {
     //   later(async () => {
     //     try {
@@ -32,6 +32,10 @@ export default Route.extend({
 
     // this.set('modelPromise', promise);
     // return { isLoading: true };
+    if (search) {
+      return this.get('store').query('speaker', { q: search });
+    }
+
     return this.get('store').findAll('speaker');
   },
 
@@ -43,9 +47,6 @@ export default Route.extend({
   },
 
   actions: {
-    // refreshRoute() {
-    //   this.refresh();
-    // },
     loading() {
       return false;
     }

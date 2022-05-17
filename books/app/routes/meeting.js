@@ -7,8 +7,12 @@ export default Route.extend({
     }
   },
 
-  model() {
-    // return this.get('store').findAll('meeting');
+  model({ search }) {
+    if (search) {
+      return this.get('store').query('meeting', { meetingDate_like: search });
+    }
+
+    return this.get('store').findAll('meeting');
   },
 
   actions: {
