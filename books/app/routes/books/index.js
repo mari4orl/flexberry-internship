@@ -10,16 +10,17 @@ export default Route.extend({
     search: {
       refreshModel: true
     },
-    tag_like: {
+    searchByTag: {
       refreshModel: true
     }
   },
 
-  model({ search }) {
+  model({ search, searchByTag }) {
     let promise = new Promise((resolve, reject) => {
       later(async () => {
         try {
-          let books = search ? await this.get('dataService').getBooks(search) : this.get('dataService').getBooks();
+          let books = search || searchByTag ? await this.get('dataService').getBooks(search, searchByTag) : this.get('dataService').getBooks();
+
           resolve(books);
         }
         catch (e) {
