@@ -8,5 +8,5 @@ export default DS.Model.extend({
   descriptionURL: DS.attr('string'),
   tags: DS.attr(),
 
-  speaker: DS.hasMany('speaker')
+  // speaker: DS.hasMany('speaker')
 });

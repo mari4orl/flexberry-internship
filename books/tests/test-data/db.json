@@ -1,7 +1,7 @@
 {
   "books": [
     {
-      "title": "Little Women",
+      "title": "Little Women1",
       "author": "Louisa May Alcott",
       "pages": "449",
       "descriptionURL": "https://www.npmjs.com/package/blueimp-file-upload",
@@ -133,7 +133,8 @@
       "surname": "Greene1",
       "patronymic": "Karen",
       "coverURL": "images/speaker.jpg",
-      "id": 1
+      "id": 1,
+      "booksId": null
     },
     {
       "name": "Monica",
@@ -172,8 +173,8 @@
     },
     {
       "name": "Parker",
-      "surname": "Piter1",
       "patronymic": "",
+      "surname": "Leto",
       "id": 7
     }
   ]

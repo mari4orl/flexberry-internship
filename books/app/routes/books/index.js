@@ -15,7 +15,7 @@ export default Route.extend({
     }
   },
 
-  model() {
+  model({ search, searchByTag }) {
     // let promise = new Promise((resolve, reject) => {
     //   later(async () => {
     //     try {
@@ -38,6 +38,15 @@ export default Route.extend({
 
     // this.set('modelPromise', promise);
     // return { isLoading: true };
+
+    if (search && !searchByTag) {
+      return this.get('store').query('book', { q: search });
+    } else if (search && searchByTag) {
+      return this.get('store').query('book', { q: search });
+    } else if (searchByTag && !search){
+      return this.get('store').query('book', { tag_like: searchByTag });
+    }
+
     return this.get('store').findAll('book');
   },
 

@@ -5,5 +5,5 @@ export default DS.Model.extend({
   patronymic: DS.attr('string'),
   surname: DS.attr('string'),
 
-  books: DS.belongsTo ('book')
+  // books: DS.belongsTo ('book')
 });
