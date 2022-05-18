@@ -57,7 +57,7 @@
       "title": "Harry Potter",
       "author": "J.K.Rowling",
       "pages": "550",
-      "coverURL": "",
+      "coverURL": "/uploads/33470009-1652865576556.JPG",
       "descriptionURL": "",
       "tags": [
         "#суперкгнига",
@@ -70,7 +70,7 @@
       "title": "Witcher",
       "author": "Andjey Sapkovskiy",
       "pages": "300",
-      "coverURL": "",
+      "coverURL": "/uploads/IMG_0355-1652865619644.JPG",
       "descriptionURL": "",
       "tags": [
         "#суперкгнига",
@@ -130,7 +130,7 @@
   "speakers": [
     {
       "name": "Rachel",
-      "surname": "Greene",
+      "surname": "Greene1",
       "patronymic": "Karen",
       "coverURL": "images/speaker.jpg",
       "id": 1
