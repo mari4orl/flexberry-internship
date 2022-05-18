@@ -21,6 +21,8 @@ Router.map(function() {
   this.route('speaker-create');
   this.route('meeting-edit');
   this.route('meeting-create');
+  this.route('report-edit');
+  this.route('report-create');
 });
 
 export default Router;
