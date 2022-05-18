@@ -11,7 +11,7 @@ export default Controller.extend({
     },
     async deleteBook(book) {
       try {
-        await book.destroyRecord('book');
+        await book.destroyRecord();
 
         // this.send('refreshRoute');
       }

@@ -6,7 +6,7 @@ export default Controller.extend({
   actions: {
     async deleteSpeaker(speaker) {
       try {
-        await speaker.destroyRecord('speaker');
+        await speaker.destroyRecord();
         // this.send('refreshRoute');
       }
       catch(e) {
