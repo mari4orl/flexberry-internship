@@ -7,7 +7,7 @@
     {{/link-to}}
   </div>
   <div class="col-md-auto">
-    <form class="form-inline">
+    <form class="form-inline" onsubmit={{action "searchBooks"}}>
       {{input class="form-control mr-2 search-long" value=search type="search" placeholder="Найти по полям" aria-label="Найти по полям"}}
       <button class="btn btn-primary my-2" type="submit">Найти</button>
     </form>

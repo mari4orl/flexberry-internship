@@ -6,7 +6,7 @@ export default Component.extend({
       e.preventDefault();
 
       this.onsubmit({
-        id:  this.get('idSpeaker'),
+        id:  this.get('speakerId'),
         name: this.get('name'),
         surname: this.get('surname'),
         patronymic: this.get('patronymic')
