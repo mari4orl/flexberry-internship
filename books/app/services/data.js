@@ -172,5 +172,5 @@ export default Service.extend({
       },
       body: JSON.stringify(speaker)
     });
-  }
+  },
 });

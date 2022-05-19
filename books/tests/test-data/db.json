@@ -134,6 +134,15 @@
       "descriptionURL": "",
       "tags": [],
       "id": 17
+    },
+    {
+      "title": "dfh",
+      "author": "dfh",
+      "pages": "",
+      "coverURL": "",
+      "descriptionURL": "",
+      "tags": [],
+      "id": 18
     }
   ],
   "speakers": [
@@ -181,10 +190,67 @@
       "id": 6
     },
     {
-      "name": "Parker",
+      "name": "dfdfh",
       "patronymic": "",
       "surname": "Leto",
       "id": 7
+    },
+    {
+      "name": "dfdfh",
+      "patronymic": "",
+      "surname": "Leto",
+      "id": 8
+    },
+    {
+      "name": "dfh",
+      "patronymic": "",
+      "surname": "dfh",
+      "id": 9
+    }
+  ],
+  "meetings": [
+    {
+      "meetingDate": "2021-08-25T19:00:00.000Z",
+      "id": 1
+    },
+    {
+      "meetingDate": "2021-08-03T19:00:00.000Z",
+      "id": 2
+    }
+  ],
+  "reports": [
+    {
+      "reportDate": "19.05.2022",
+      "bookRating": 80,
+      "reportURL": "#",
+      "slidesURL": "#",
+      "review": "elementum sagittis vitae et leo duis. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus.",
+      "speakerId": 1,
+      "bookId": 1,
+      "meetingId": 1,
+      "id": 1
+    },
+    {
+      "reportDate": "19.05.2022",
+      "bookRating": 70,
+      "reportURL": "#",
+      "slidesURL": "#",
+      "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?",
+      "speakerId": 2,
+      "bookId": 2,
+      "meetingId": 1,
+      "id": 3
+    },
+    {
+      "reportDate": "04.08.2021",
+      "bookRating": 60,
+      "reportURL": "#",
+      "slidesURL": "#",
+      "review": "gue ut lectus. Interdum varius sit amet mattis vulputate enim nulla aliquet. Laoreet sit amet cursus sit amet dictum sit. Id leo in vitae turpis massa sed elementum. Et magnis dis parturient montes nascetur. Ut enim blandit volutpat mae",
+      "speakerId": 2,
+      "bookId": 2,
+      "meetingId": 2,
+      "id": 2
     }
   ]
 }

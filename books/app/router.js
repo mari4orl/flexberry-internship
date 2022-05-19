@@ -19,7 +19,7 @@ Router.map(function() {
   this.route('meeting', { path: '/meetings' });
   this.route('speaker-edit', { path: '/:id/speakers-edit' });
   this.route('speaker-create');
-  this.route('meeting-edit');
+  this.route('meeting-edit', { path: "/meeting-edit/:id" });
   this.route('meeting-create');
   this.route('report-edit');
   this.route('report-create');
