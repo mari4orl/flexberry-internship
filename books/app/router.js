@@ -23,6 +23,7 @@ Router.map(function() {
   this.route('meeting-create');
   this.route('report-edit');
   this.route('report-create');
+  this.route('report');
 });
 
 export default Router;

@@ -198,11 +198,11 @@
   ],
   "meetings": [
     {
-      "meetingDate": "2021-08-25T19:00:00.000Z",
+      "meetingDate": "2022-05-20T19:00:00.000Z",
       "id": 1
     },
     {
-      "meetingDate": "2021-08-03T19:00:00.000Z",
+      "meetingDate": "2022-05-03T19:00:00.000Z",
       "id": 2
     }
   ],
@@ -230,7 +230,7 @@
       "id": 3
     },
     {
-      "reportDate": "04.08.2021",
+      "reportDate": "03.05.2022",
       "bookRating": 60,
       "reportURL": "#",
       "slidesURL": "#",

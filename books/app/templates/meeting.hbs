@@ -12,11 +12,11 @@
       <div class="col-md-3 align-top">
         <h5>Спикер</h5>
         <select class="selectpicker form-control dropdown-filter-control" data-live-search="true" data-size="5" title="Спикер...">
-          <option>Фамилия имя</option>
-          <option>Фамилия имя</option>
-          <option>Фамилия имя</option>
-          <option>Фамилия имя</option>
-          <option>Фамилия имя</option>
+          {{#each model.reports as |report|}}
+            {{#each report.speakers as |speaker|}}
+              <option>{{speaker.name}} {{speaker.surname}}</option>
+            {{/each}}
+          {{/each}}
         </select>
       </div>
       <div class="col-md-3">
@@ -91,7 +91,7 @@
             </div>
             <div class="col-md-2 text-center">
               <h5 class="py-2">Книга</h5>
-              <p>{{report.book.title}}</p>
+              <p>{{report.book.name}}</p>
               <p>{{report.book.author}}</p>
               <div class="row align-items-center m-0">
                 <div class="col-md-auto pl-0">
