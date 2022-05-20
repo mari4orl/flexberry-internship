@@ -127,18 +127,18 @@
       "id": 16
     },
     {
-      "title": "book",
-      "author": "vbd",
-      "pages": "",
+      "title": "Book",
+      "author": "Book",
+      "pages": null,
       "coverURL": "",
       "descriptionURL": "",
       "tags": [],
       "id": 17
     },
     {
-      "title": "dfh",
-      "author": "dfh",
-      "pages": "",
+      "title": "sdg",
+      "author": "sdf",
+      "pages": null,
       "coverURL": "",
       "descriptionURL": "",
       "tags": [],
@@ -190,22 +190,10 @@
       "id": 6
     },
     {
-      "name": "dfdfh",
+      "name": "Tony",
       "patronymic": "",
-      "surname": "Leto",
+      "surname": "Stark",
       "id": 7
-    },
-    {
-      "name": "dfdfh",
-      "patronymic": "",
-      "surname": "Leto",
-      "id": 8
-    },
-    {
-      "name": "dfh",
-      "patronymic": "",
-      "surname": "dfh",
-      "id": 9
     }
   ],
   "meetings": [

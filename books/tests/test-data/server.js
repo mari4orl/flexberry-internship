@@ -24,7 +24,11 @@ function responseInterceptor(req, res, next) {
       let id = parseInt(idStr);
       id = isNaN(id) ? idStr : id;
 
-      let newBody = Object.assign({}, JSON.parse(body));
+      let newBody = {};
+      console.log('hi', body==='\n');
+      // if (body!=='') {
+      //   newBody = Object.assign({}, JSON.parse(body));
+      // }
       newBody.id = id;
       arguments[0] = JSON.stringify(newBody);
     }
