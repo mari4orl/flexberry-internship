@@ -1,9 +1,9 @@
 {
   "books": [
     {
-      "title": "Little Women1",
+      "title": "Little Women",
       "author": "Louisa May Alcott",
-      "pages": "449",
+      "pages": 449,
       "descriptionURL": "https://www.npmjs.com/package/blueimp-file-upload",
       "tags": [
         "#суперкгнига",
@@ -11,7 +11,7 @@
         "666"
       ],
       "coverURL": "images/book-cover.jpg",
-      "rating": "35",
+      "rating": 35,
       "id": 1
     },
     {
@@ -26,6 +26,20 @@
       "coverURL": "images/book-cover.jpg",
       "rating": "90",
       "id": 2
+    },
+    {
+      "title": "Mort",
+      "author": "Terry Pratchet",
+      "pages": "250",
+      "descriptionURL": "https://www.youtube.com/watch?v=UJDRLoe2KEc",
+      "tags": [
+        "#суперкгнига",
+        "#программирование",
+        "#sci-fi"
+      ],
+      "coverURL": "images/book-cover.jpg",
+      "rating": "90",
+      "id": 3
     },
     {
       "title": "Fahrenheit 451",
@@ -148,45 +162,38 @@
   "speakers": [
     {
       "name": "Rachel",
-      "surname": "Greene1",
+      "surname": "Greene",
       "patronymic": "Karen",
-      "coverURL": "images/speaker.jpg",
-      "id": 1,
-      "booksId": null
+      "id": 1
     },
     {
       "name": "Monica",
       "surname": "Geller",
       "patronymic": "E.",
-      "coverURL": "images/speaker.jpg",
       "id": 2
     },
     {
       "name": "Phoebe",
       "surname": "Buffay",
       "patronymic": "",
-      "coverURL": "images/speaker.jpg",
       "id": 3
     },
     {
       "name": "Chandler",
       "surname": "Bing",
       "patronymic": "Muriel",
-      "coverURL": "images/speaker.jpg",
       "id": 4
     },
     {
       "name": "Ross",
       "surname": "Geller",
       "patronymic": "",
-      "coverURL": "images/speaker.jpg",
       "id": 5
     },
     {
       "name": "Joey",
       "surname": "Tribbiani ",
       "patronymic": "Francis ",
-      "coverURL": "images/speaker.jpg",
       "id": 6
     },
     {
@@ -204,6 +211,14 @@
     {
       "meetingDate": "2022-05-03T19:00:00.000Z",
       "id": 2
+    },
+    {
+      "meetingDate": "2022-06-20T19:00:00.000Z",
+      "id": 3
+    },
+    {
+      "meetingDate": "2022-07-03T19:00:00.000Z",
+      "id": 4
     }
   ],
   "reports": [
@@ -235,10 +250,32 @@
       "reportURL": "#",
       "slidesURL": "#",
       "review": "gue ut lectus. Interdum varius sit amet mattis vulputate enim nulla aliquet. Laoreet sit amet cursus sit amet dictum sit. Id leo in vitae turpis massa sed elementum. Et magnis dis parturient montes nascetur. Ut enim blandit volutpat mae",
-      "speakerId": 2,
-      "bookId": 2,
+      "speakerId": 3,
+      "bookId": 3,
       "meetingId": 2,
       "id": 2
+    },
+    {
+      "reportDate": "03.06.2022",
+      "bookRating": 70,
+      "reportURL": "#",
+      "slidesURL": "#",
+      "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?",
+      "speakerId": 5,
+      "bookId": 11,
+      "meetingId": 3,
+      "id": 4
+    },
+    {
+      "reportDate": "03.07.2022",
+      "bookRating": 70,
+      "reportURL": "#",
+      "slidesURL": "#",
+      "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?",
+      "speakerId": 4,
+      "bookId": 10,
+      "meetingId": 4,
+      "id": 5
     }
   ]
 }

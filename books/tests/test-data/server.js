@@ -41,6 +41,21 @@ function responseInterceptor(req, res, next) {
 
 server.use(responseInterceptor);
 
+server.use((request, response, next) => {
+  const speaker = Number(request.query.speaker);
+  if (request.method === 'GET' && request.path === '/meetings' && !Number.isNaN(speaker)) {
+    const meetings = router.db.get('meetings').filter((b) => b.speakerId === speaker).map((meeting) => {
+      meeting.reviews = router.db.get('reviews').filter((r) => r.meetingId === meeting.id).value();
+
+      return meeting;
+    }).value();
+
+    response.json(meetings);
+  } else {
+    next();
+  }
+});
+
 // Use default router
 server.use(router)
 

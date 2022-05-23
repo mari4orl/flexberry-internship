@@ -4,7 +4,7 @@ export default ApplicationSerializer.extend({
   attrs: {
     reports: {
       serialize: false,
-      deserialize: 'records'
+      deserialize: 'ids'
     }
   },
 
