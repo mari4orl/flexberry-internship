@@ -11,8 +11,8 @@ export default Controller.extend({
   books: '',
   report: '',
 
-  pages: computed('model.meeting.meta.total', function() {
-    const total = Number(this.get('model.meeting.meta.total'));
+  pages: computed('model.meetings.meta.total', function() {
+    const total = Number(this.get('model.meetings.meta.total'));
     if (Number.isNaN(total) || total <= 0) {
       return [];
     }

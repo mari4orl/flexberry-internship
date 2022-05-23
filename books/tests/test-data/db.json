@@ -219,6 +219,10 @@
     {
       "meetingDate": "2022-07-03T19:00:00.000Z",
       "id": 4
+    },
+    {
+      "meetingDate": null,
+      "id": 5
     }
   ],
   "reports": [

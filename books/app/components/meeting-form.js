@@ -2,7 +2,7 @@ import Component from '@ember/component';
 
 export default Component.extend({
   actions: {
-    saveMeeting(e) {
+    submitForm(e) {
       e.preventDefault();
 
       this.onsubmit({
