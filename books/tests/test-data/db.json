@@ -201,6 +201,12 @@
       "patronymic": "",
       "surname": "Stark",
       "id": 7
+    },
+    {
+      "name": "Sheldon",
+      "patronymic": "Lee",
+      "surname": "Cooper",
+      "id": 8
     }
   ],
   "meetings": [
@@ -223,6 +229,18 @@
     {
       "meetingDate": null,
       "id": 5
+    },
+    {
+      "meetingDate": null,
+      "id": 6
+    },
+    {
+      "meetingDate": "2022-05-04",
+      "id": 7
+    },
+    {
+      "meetingDate": null,
+      "id": 8
     }
   ],
   "reports": [
@@ -280,6 +298,14 @@
       "bookId": 10,
       "meetingId": 4,
       "id": 5
+    },
+    {
+      "reportDate": null,
+      "bookRating": 56,
+      "reportURL": "https://www.youtube.com/watch?v=E0RgHAtvpqU",
+      "slidesURL": "https://www.youtube.com/watch?v=E0RgHAtvpqU",
+      "review": null,
+      "id": 6
     }
   ]
 }

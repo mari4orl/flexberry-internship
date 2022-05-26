@@ -25,12 +25,21 @@ export default Controller.extend({
   selectedSpeaker: computed('speaker', function() {
     const speaker = this.get('speaker');
 
-    return speaker ? this.get('model.speaker').findBy('id', speaker) : null;
+    return speaker ? this.get('model.speakers').findBy('id', speaker) : null;
+  }),
+
+  selectedBook: computed('book', function() {
+    const book = this.get('book');
+
+    return book ? this.get('model.books').findBy('id', book) : null;
   }),
 
   actions: {
     changeSpeaker(speaker) {
       this.set('speaker', speaker ? speaker.get('id') : '');
+    },
+    changeBook(book) {
+      this.set('book', book ? book.get('id') : '');
     }
   }
 });

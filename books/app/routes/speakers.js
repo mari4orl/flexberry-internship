@@ -10,28 +10,6 @@ export default Route.extend({
   },
 
   model({ search }) {
-    // let promise = new Promise((resolve, reject) => {
-    //   later(async () => {
-    //     try {
-    //       let speakers = search ? await this.get('dataService').getSpeakers(search) : this.get('dataService').getSpeakers();
-    //       resolve(speakers);
-    //     }
-    //     catch (e) {
-    //       reject('Connection failed')
-    //     }
-    //   }, 1000);
-    // }).
-    // then((speakers) => {
-    //   this.set('controller.model', speakers);
-    // }).
-    // finally(() => {
-    //   if (promise === this.get('modelPromise')) {
-    //     this.set('controller.isLoading', false);
-    //   }
-    // });
-
-    // this.set('modelPromise', promise);
-    // return { isLoading: true };
     if (search) {
       return this.get('store').query('speaker', { q: search });
     }

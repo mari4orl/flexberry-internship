@@ -5,13 +5,13 @@ export default Controller.extend({
   search: '',
   actions: {
     async deleteSpeaker(speaker) {
-      try {
-        await speaker.destroyRecord();
-        // this.send('refreshRoute');
-      }
-      catch(e) {
-        // this.send('error', new Error('Connection failed'));
-      }
+      await speaker.destroyRecord();
+      // this.send('refreshRoute');
+    },
+
+    searchSpeaker(e) {
+      e.preventDefault();
+      this.set("search", this.get("searchSpeaker"));
     }
   }
 });

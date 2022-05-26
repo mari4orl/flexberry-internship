@@ -43,14 +43,20 @@ server.use(responseInterceptor);
 
 server.use((request, response, next) => {
   const speaker = Number(request.query.speaker);
+  const book = Number(request.query.book);
+
   if (request.method === 'GET' && request.path === '/meetings' && !Number.isNaN(speaker)) {
-    const meetings = router.db.get('meetings').filter((b) => b.speakerId === speaker).map((meeting) => {
-      meeting.reviews = router.db.get('reviews').filter((r) => r.meetingId === meeting.id).value();
+    const speakersArr = router.db.get('reports').filter((r) => r.speakerId === speaker).value();
+    const mapArr = speakersArr.map(report => report.meetingId);
+    const newMeetings = router.db.get('meetings').filter((meeting) => mapArr.some(el => meeting.id === el)).value();
 
-      return meeting;
-    }).value();
+    response.json(newMeetings);
+  } else if (request.method === 'GET' && request.path === '/meetings' && !Number.isNaN(book)) {
+    const booksArr = router.db.get('reports').filter((r) => r.bookId === book).value();
+    const mapArr = booksArr.map(report => report.meetingId);
+    const newMeetings = router.db.get('meetings').filter((meeting) => mapArr.some(el => meeting.id === el)).value();
 
-    response.json(meetings);
+    response.json(newMeetings);
   } else {
     next();
   }
