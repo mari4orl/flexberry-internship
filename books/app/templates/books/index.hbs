@@ -7,15 +7,15 @@
     {{/link-to}}
   </div>
   <div class="col-md-auto">
-    <form class="form-inline" onsubmit={{action "searchBooks"}}>
-      {{input class="form-control mr-2 search-long" value=search type="search" placeholder="Найти по полям" aria-label="Найти по полям"}}
-      <button class="btn btn-primary my-2" type="submit">Найти</button>
+    <form class="form-inline">
+      {{input class="form-control mr-2 search-long" value=searchBook type="search" placeholder="Найти по полям" aria-label="Найти по полям"}}
+      <button onclick={{action "searchBook"}} class="btn btn-primary my-2" type="submit">Найти</button>
     </form>
   </div>
   <div class="col-md-auto">
     <form class="form-inline">
-      {{input class="form-control mr-2" type="search" value=searchByTag placeholder="Поиск по тегам" aria-label="Найти по тегам"}}
-      <button class="btn btn-primary my-2" type="submit">Поиск</button>
+      {{input class="form-control mr-2" type="search" value=searchBookByTag placeholder="Поиск по тегам" aria-label="Найти по тегам"}}
+      <button onclick={{action "searchBookByTag"}} class="btn btn-primary my-2" type="submit">Поиск</button>
     </form>
   </div>
 </div>

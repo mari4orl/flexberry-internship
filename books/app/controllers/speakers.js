@@ -6,6 +6,11 @@ export default Controller.extend({
   search: '',
   dataService: service('data'),
   actions: {
+    searchSpeaker(e) {
+      e.preventDefault();
+      this.set("search", this.get("searchSpeaker"));
+    },
+
     async deleteSpeaker(speaker) {
       try {
         await this.get('dataService').deleteSpeaker(speaker);

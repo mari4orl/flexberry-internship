@@ -19,10 +19,10 @@ export default Component.extend({
     this._super(...arguments);
 
     const onFileAdd = (e, uploadData) => {
-      // const hasFiles = uploadData.files.length > 0;
-      // const fileName = hasFiles ? uploadData.files[0].name : 'Выберите файл';
-      // this.set('fileName', fileName);
-      this.uploadDataChanged(uploadData);
+      const hasFiles = uploadData.files.length > 0;
+      const fileName = hasFiles ? uploadData.files[0].name : 'Выберите файл';
+      this.set('fileName', fileName);
+      // this.uploadDataChanged(uploadData);
     };
 
     if (!this.$('.custom-file-input').fileupload('instance')) {
