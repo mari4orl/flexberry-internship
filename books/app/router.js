@@ -24,6 +24,9 @@ Router.map(function() {
   this.route('report-edit');
   this.route('report-create');
   this.route('report');
+  this.route('register');
+  this.route('login');
+  this.route('index', { path: '/' });
 });
 
 export default Router;

@@ -12,6 +12,44 @@ server.use(middlewares)
 // You can use the one used by JSON Server
 server.use(jsonServer.bodyParser);
 
+server.post('/token', function (req, res) {
+  const emailFromBody = req.body.email;
+  const passwordFromBody = req.body.password;
+  const hashedPassword = crypto.createHmac('sha256', hashingSecret).update(passwordFromBody).digest('hex');
+
+  const db = router.db; //lowdb instance
+  const user = db.get('users').find({ email: emailFromBody, password: hashedPassword }).value();
+
+  if (user) {
+    const token = generateAccessToken({ email: user.email, username: user.username });
+    res.json({ token });
+  }
+  else {
+    res.status(401).json(getError('Login', 'Error logging in user with that e-mail and password', 401, null));
+  }
+});
+
+// Validate user to add
+server.use((req, res, next) => {
+  const db = router.db; //lowdb instance
+  const user = db.get('users').find({ username: req.body.username }).value();
+
+  const valid = !req.body || req.body && !user;
+  if (getBaseRoute(req) === 'users' && req.method === 'POST' && !valid) {
+    res.status(422).json(getError('Username', 'username is already taken', 422, '/data/attributes/username'));
+  }
+  else if (getBaseRoute(req) === 'users' && req.method === 'POST') {
+    const hashedPassword = crypto.createHmac('sha256', hashingSecret).update(req.body.password).digest('hex');
+    req.body.password = hashedPassword;
+    req.body.passwordConfirmation = hashedPassword;
+    next();
+  }
+  else {
+    // Continue to JSON Server router
+    next();
+  }
+});
+
 function responseInterceptor(req, res, next) {
   var originalSend = res.send;
 

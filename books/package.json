@@ -2,7 +2,7 @@
   "name": "books",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for books goes here",
+  "description": "Study app",
   "license": "MIT",
   "author": "",
   "directories": {
@@ -53,6 +53,9 @@
   },
   "dependencies": {
     "blueimp-file-upload": "^10.32.0",
+    "ember-simple-auth": "^3.0.1",
+    "ember-simple-auth-token": "^5.2.0",
+    "jsonwebtoken": "^8.5.1",
     "multer": "^1.4.4"
   }
 }
