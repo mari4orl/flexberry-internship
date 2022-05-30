@@ -307,5 +307,21 @@
       "review": null,
       "id": 6
     }
+  ],
+  "users": [
+    {
+      "email": "a@a.ru",
+      "username": "a",
+      "password": "666f7ac00db9d033369e5db9232e83d58e46ffedcfca2c184a0d8dcadc2676b6",
+      "passwordConfirmation": "666f7ac00db9d033369e5db9232e83d58e46ffedcfca2c184a0d8dcadc2676b6",
+      "id": 1
+    },
+    {
+      "email": "b@b.ru",
+      "username": "b",
+      "password": "3098e1281c3c9956130ed1392978ab2af2139b09e06dfbf86e4e2d20ce304ac7",
+      "passwordConfirmation": "3098e1281c3c9956130ed1392978ab2af2139b09e06dfbf86e4e2d20ce304ac7",
+      "id": 2
+    }
   ]
 }

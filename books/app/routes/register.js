@@ -6,8 +6,7 @@ export default Route.extend(UnauthenticatedRouteMixin, {
     return {
       email: '',
       username: '',
-      password: '',
-      passwordConfirmation: ''
+      password: ''
     }
   },
 
