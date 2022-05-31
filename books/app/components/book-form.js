@@ -1,7 +1,9 @@
 import Component from '@ember/component';
 import { set } from '@ember/object';
+import { inject as service } from '@ember/service';
 
 export default Component.extend({
+  currentUser: service(),
   actions: {
     changeTags(newTags) {
       set(this, 'tags', [...newTags]);

@@ -21,5 +21,13 @@ export default Ability.extend({
       });
     });
 
+  }).volatile(),
+
+  canCreate: computed(function () {
+    if (!this.get('session.isAuthenticated')) {
+      return false;
+    }
+
+    return this.get('currentUser.user.username') === 'a';
   }).volatile()
 });

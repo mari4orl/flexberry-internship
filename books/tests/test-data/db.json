@@ -83,7 +83,8 @@
         "#программирование",
         "#sci-fi"
       ],
-      "id": 11
+      "id": 11,
+      "userId": 1
     },
     {
       "title": "Witcher",
@@ -96,7 +97,8 @@
         "#программирование",
         "#sci-fi"
       ],
-      "id": 12
+      "id": 12,
+      "userId": 1
     },
     {
       "title": "War and Peace",
@@ -110,7 +112,8 @@
         "#sci-fi",
         "#lit"
       ],
-      "id": 13
+      "id": 13,
+      "userId": 1
     },
     {
       "title": "The Hobbit",
@@ -122,7 +125,8 @@
         "#fantasy",
         "#lit"
       ],
-      "id": 14
+      "id": 14,
+      "userId": 1
     },
     {
       "title": "sss",
@@ -131,7 +135,8 @@
       "coverURL": "/uploads/03930035-1652782925303.JPG",
       "descriptionURL": "",
       "tags": [],
-      "id": 15
+      "id": 15,
+      "userId": 1
     },
     {
       "title": "",
@@ -143,7 +148,8 @@
         "#eee",
         "#fdfgd"
       ],
-      "id": 16
+      "id": 16,
+      "userId": 1
     },
     {
       "title": "Book",
@@ -152,16 +158,8 @@
       "coverURL": "",
       "descriptionURL": "",
       "tags": [],
-      "id": 17
-    },
-    {
-      "title": "sdg",
-      "author": "sdf",
-      "pages": null,
-      "coverURL": "",
-      "descriptionURL": "",
-      "tags": [],
-      "id": 18
+      "id": 17,
+      "userId": 1
     },
     {
       "title": "Евгений Онегин",
@@ -173,41 +171,8 @@
         "классика"
       ],
       "rating": null,
-      "userId": null,
+      "userId": 1,
       "id": 19
-    },
-    {
-      "title": "Евгений Онегин",
-      "author": "Пушкин",
-      "pages": null,
-      "coverURL": "",
-      "descriptionURL": "",
-      "tags": [],
-      "rating": null,
-      "userId": null,
-      "id": 20
-    },
-    {
-      "title": "Евгений Онегин",
-      "author": "Пушкин",
-      "pages": null,
-      "coverURL": "",
-      "descriptionURL": "",
-      "tags": [],
-      "rating": null,
-      "userId": null,
-      "id": 21
-    },
-    {
-      "title": "sss",
-      "author": "rth",
-      "pages": null,
-      "coverURL": "",
-      "descriptionURL": "",
-      "tags": [],
-      "rating": null,
-      "userId": null,
-      "id": 22
     }
   ],
   "speakers": [
@@ -223,13 +188,6 @@
       "surname": "Geller",
       "patronymic": "E.",
       "id": 2,
-      "userId": 1
-    },
-    {
-      "name": "Phoebe",
-      "surname": "Buffay",
-      "patronymic": "",
-      "id": 3,
       "userId": 1
     },
     {
@@ -320,17 +278,6 @@
       "bookId": 2,
       "meetingId": 1,
       "id": 3
-    },
-    {
-      "reportDate": "03.05.2022",
-      "bookRating": 60,
-      "reportURL": "#",
-      "slidesURL": "#",
-      "review": "gue ut lectus. Interdum varius sit amet mattis vulputate enim nulla aliquet. Laoreet sit amet cursus sit amet dictum sit. Id leo in vitae turpis massa sed elementum. Et magnis dis parturient montes nascetur. Ut enim blandit volutpat mae",
-      "speakerId": 3,
-      "bookId": 3,
-      "meetingId": 2,
-      "id": 2
     },
     {
       "reportDate": "03.06.2022",
