@@ -21,8 +21,8 @@ export default Component.extend({
       });
     },
 
-    changeUploadData(setUploadData) {
-      set(this, 'setUploadData', setUploadData);
+    changeUploadData(uploadData) {
+      this.get('uploadDataChanged')(uploadData);
     }
   },
 

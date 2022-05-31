@@ -125,6 +125,15 @@
         "#fdfgd"
       ],
       "id": 16
+    },
+    {
+      "title": "wret",
+      "author": "we",
+      "pages": "",
+      "coverURL": "/uploads/Jelly_Kid.PNG-1653996104341.png",
+      "descriptionURL": "",
+      "tags": [],
+      "id": 17
     }
   ],
   "speakers": [
@@ -132,42 +141,36 @@
       "name": "Rachel",
       "surname": "Greene1",
       "patronymic": "Karen",
-
       "id": 1
     },
     {
       "name": "Monica",
       "surname": "Geller",
       "patronymic": "E.",
-
       "id": 2
     },
     {
       "name": "Phoebe",
       "surname": "Buffay",
       "patronymic": "",
-
       "id": 3
     },
     {
       "name": "Chandler",
       "surname": "Bing",
       "patronymic": "Muriel",
-
       "id": 4
     },
     {
       "name": "Ross",
       "surname": "Geller",
       "patronymic": "",
-
       "id": 5
     },
     {
       "name": "Joey",
       "surname": "Tribbiani ",
       "patronymic": "Francis ",
-
       "id": 6
     },
     {
