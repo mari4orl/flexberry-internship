@@ -17,7 +17,8 @@ export default Component.extend({
         pages: this.get('pages'),
         coverURL: this.get('coverURL'),
         descriptionURL: this.get('descriptionURL'),
-        tags: this.get('tags')
+        tags: this.get('tags'),
+        user: this.get('currentUser.user')
       });
     },
 

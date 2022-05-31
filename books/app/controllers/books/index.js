@@ -1,9 +1,12 @@
 import Controller from '@ember/controller';
+import { inject as service } from '@ember/service';
 
 export default Controller.extend({
   queryParams: ['search', 'searchByTag'],
   search: '',
   searchByTag: '',
+  session: service(),
+  currentUser: service(),
   actions: {
     searchBook(e) {
       e.preventDefault();

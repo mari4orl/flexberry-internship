@@ -9,7 +9,8 @@ export default Component.extend({
         id:  this.get('speakerId'),
         name: this.get('name'),
         surname: this.get('surname'),
-        patronymic: this.get('patronymic')
+        patronymic: this.get('patronymic'),
+        user: this.get('currentUser.user')
       });
     }
   },

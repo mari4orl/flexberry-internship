@@ -12,7 +12,8 @@
       ],
       "coverURL": "images/book-cover.jpg",
       "rating": 35,
-      "id": 1
+      "id": 1,
+      "userId": 1
     },
     {
       "title": "To Kill a Mockingbird",
@@ -25,7 +26,8 @@
       ],
       "coverURL": "images/book-cover.jpg",
       "rating": "90",
-      "id": 2
+      "id": 2,
+      "userId": 1
     },
     {
       "title": "Mort",
@@ -39,7 +41,8 @@
       ],
       "coverURL": "images/book-cover.jpg",
       "rating": "90",
-      "id": 3
+      "id": 3,
+      "userId": 1
     },
     {
       "title": "Fahrenheit 451",
@@ -53,7 +56,8 @@
       ],
       "coverURL": "images/book-cover.jpg",
       "rating": "60",
-      "id": 4
+      "id": 4,
+      "userId": 1
     },
     {
       "title": "Dracula",
@@ -65,7 +69,8 @@
         "#программирование",
         "#sci-fi"
       ],
-      "coverURL": "/uploads/03930026-1652784301793.JPG"
+      "coverURL": "/uploads/03930026-1652784301793.JPG",
+      "userId": 1
     },
     {
       "title": "Harry Potter",
@@ -164,25 +169,29 @@
       "name": "Rachel",
       "surname": "Greene",
       "patronymic": "Karen",
-      "id": 1
+      "id": 1,
+      "userId": 1
     },
     {
       "name": "Monica",
       "surname": "Geller",
       "patronymic": "E.",
-      "id": 2
+      "id": 2,
+      "userId": 1
     },
     {
       "name": "Phoebe",
       "surname": "Buffay",
       "patronymic": "",
-      "id": 3
+      "id": 3,
+      "userId": 1
     },
     {
       "name": "Chandler",
       "surname": "Bing",
       "patronymic": "Muriel",
-      "id": 4
+      "id": 4,
+      "userId": 1
     },
     {
       "name": "Ross",
