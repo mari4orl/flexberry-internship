@@ -7,7 +7,7 @@ export default Ability.extend({
   currentUser: service(),
   session: service(),
 
-  // only the person who wrote a post can edit it
+  // only the admin who wrote a post can edit it
   canEdit: computed(function () {
     if (!this.get('session.isAuthenticated')) {
       return false;

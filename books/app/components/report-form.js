@@ -1,6 +1,8 @@
 import Component from '@ember/component';
+import { inject as service } from '@ember/service';
 
 export default Component.extend({
+  currentUser: service(),
   actions: {
     submitForm(e) {
       e.preventDefault();
@@ -13,7 +15,8 @@ export default Component.extend({
         review: this.get('review'),
         bookId:  this.get('bookId'),
         meetingId:  this.get('meetingId'),
-        speakerId:  this.get('speakerId')
+        speakerId:  this.get('speakerId'),
+        user: this.get('currentUser.user')
       });
     }
   },

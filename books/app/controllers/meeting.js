@@ -1,5 +1,6 @@
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
+import { inject as service } from '@ember/service';
 
 export const PER_PAGE = 2;
 
@@ -10,6 +11,8 @@ export default Controller.extend({
   speaker: '',
   books: '',
   report: '',
+  session: service(),
+  currentUser: service(),
 
   pages: computed('model.meetings.meta.total', function() {
     const total = Number(this.get('model.meetings.meta.total'));

@@ -201,59 +201,71 @@
       "name": "Ross",
       "surname": "Geller",
       "patronymic": "",
-      "id": 5
+      "id": 5,
+      "userId": 1
     },
     {
       "name": "Joey",
       "surname": "Tribbiani ",
       "patronymic": "Francis ",
-      "id": 6
+      "id": 6,
+      "userId": 1
     },
     {
       "name": "Tony",
       "patronymic": "",
       "surname": "Stark",
-      "id": 7
+      "id": 7,
+      "userId": 1
     },
     {
       "name": "Sheldon",
       "patronymic": "Lee",
       "surname": "Cooper",
-      "id": 8
+      "id": 8,
+      "userId": 1
     }
   ],
   "meetings": [
     {
       "meetingDate": "2022-05-20T19:00:00.000Z",
-      "id": 1
+      "id": 1,
+      "userId": 1
     },
     {
       "meetingDate": "2022-05-03T19:00:00.000Z",
-      "id": 2
+      "id": 2,
+      "userId": 1
     },
     {
       "meetingDate": "2022-06-20T19:00:00.000Z",
-      "id": 3
+      "id": 3,
+      "userId": 1
     },
     {
       "meetingDate": "2022-07-03T19:00:00.000Z",
-      "id": 4
+      "id": 4,
+      "userId": 1
     },
     {
       "meetingDate": null,
-      "id": 5
+      "id": 5,
+      "userId": 1
     },
     {
       "meetingDate": null,
-      "id": 6
+      "id": 6,
+      "userId": 1
     },
     {
       "meetingDate": "2022-05-04",
-      "id": 7
+      "id": 7,
+      "userId": 1
     },
     {
       "meetingDate": null,
-      "id": 8
+      "id": 8,
+      "userId": 1
     }
   ],
   "reports": [
@@ -266,7 +278,8 @@
       "speakerId": 1,
       "bookId": 1,
       "meetingId": 1,
-      "id": 1
+      "id": 1,
+      "userId": 1
     },
     {
       "reportDate": "19.05.2022",
@@ -277,7 +290,8 @@
       "speakerId": 2,
       "bookId": 2,
       "meetingId": 1,
-      "id": 3
+      "id": 3,
+      "userId": 1
     },
     {
       "reportDate": "03.06.2022",
@@ -288,7 +302,8 @@
       "speakerId": 5,
       "bookId": 11,
       "meetingId": 3,
-      "id": 4
+      "id": 4,
+      "userId": 1
     },
     {
       "reportDate": "03.07.2022",
@@ -299,7 +314,8 @@
       "speakerId": 4,
       "bookId": 10,
       "meetingId": 4,
-      "id": 5
+      "id": 5,
+      "userId": 1
     },
     {
       "reportDate": null,
@@ -307,7 +323,8 @@
       "reportURL": "https://www.youtube.com/watch?v=E0RgHAtvpqU",
       "slidesURL": "https://www.youtube.com/watch?v=E0RgHAtvpqU",
       "review": null,
-      "id": 6
+      "id": 6,
+      "userId": 1
     }
   ],
   "users": [
@@ -324,6 +341,13 @@
       "password": "3098e1281c3c9956130ed1392978ab2af2139b09e06dfbf86e4e2d20ce304ac7",
       "passwordConfirmation": "3098e1281c3c9956130ed1392978ab2af2139b09e06dfbf86e4e2d20ce304ac7",
       "id": 2
+    },
+    {
+      "email": "c@c.ru",
+      "username": "c",
+      "password": "cedc703a9186ffb6aca3a5f6d945c35499e877a01ecff88711a8fe6762782ae7",
+      "passwordConfirmation": "cedc703a9186ffb6aca3a5f6d945c35499e877a01ecff88711a8fe6762782ae7",
+      "id": 3
     }
   ]
 }
