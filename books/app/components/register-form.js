@@ -1,15 +1,50 @@
 import Component from '@ember/component';
+import { validator, buildValidations } from 'ember-cp-validations';
+import { inject as service } from '@ember/service';
+import { computed } from '@ember/object';
+import { later } from '@ember/runloop';
 
-export default Component.extend({
+const Validations = buildValidations({
+  username: [
+    validator('ds-error'),
+    validator('presence', true),
+  ],
+  email: [
+    validator('ds-error'),
+    validator('presence', true),
+    validator('format', { type: 'email' })
+  ],
+  password: [
+    validator('ds-error'),
+    validator('presence', true),
+    validator('length', {
+      min: 4,
+      max: 8
+    })
+  ]
+});
+
+export default Component.extend(Validations, {
+  i18n: service(),
+  isFormValid: computed.alias('validations.isValid'),
+  showError: false,
   actions: {
     async saveUser(e) {
       e.preventDefault();
-
-      this.get('onSubmit')({
-        email: this.email,
-        password: this.password,
-        username: this.username
-      });
+      if (this.get('isFormValid')) {
+        this.set('showError', false)
+        this.get('onSubmit')({
+          showError: false,
+          email: this.email,
+          password: this.password,
+          username: this.username
+        });
+      } else {
+        this.set('showError', true),
+        later(() => {
+          this.set('showError', false)
+        }, 2000)
+      }
     }
   },
 

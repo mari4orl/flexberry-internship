@@ -1,31 +1,42 @@
 <form onsubmit={{action "saveUser"}}>
   <img class="mb-4" src="images/logo-dark.png" alt="" height="57">
-  <h1 class="h3 mb-3 fw-normal">Регистрация</h1>
+  <h1 class="h3 mb-3 fw-normal">{{t "menu.register"}}</h1>
 
   <div class="form-floating">
-    {{input type="email" value=email class="form-control" id="floatingInput" placeholder="name@example.com"}}
+    {{input type="email" value=email class="form-control" id="floatingInput" placeholder=(t "register.email")}}
 
-    {{#each errors.email as |error|}}
-      <span class="error-message">{{error.message}}</span>
-    {{/each}}
+    {{#if showError}}
+      {{#if (v-get this 'email' 'isInvalid')}}
+        <span class="error-message">
+          {{v-get this 'email' 'message'}}
+        </span>
+      {{/if}}
+    {{/if}}
   </div>
 
   <div class="form-floating">
-    {{input type="text" value=username class="form-control" placeholder="Введите имя"}}
+    {{input type="text" value=username class="form-control" placeholder=(t "register.username")}}
 
-    {{#each errors.username  as |error|}}
-      <span class="error-message">{{error.message}}</span>
-    {{/each}}
+    {{#if showError}}
+      {{#if (v-get this 'username' 'isInvalid')}}
+        <span class="error-message">
+          {{v-get this 'username' 'message'}}
+        </span>
+      {{/if}}
+    {{/if}}
   </div>
 
   <div class="form-floating">
-    {{input type="password" value=password class="form-control" id="floatingPassword" placeholder="Пароль"}}
-
-    {{#each errors.password as |error|}}
-      <span class="error-message">{{error.message}}</span>
-    {{/each}}
+    {{input type="password" value=password class="form-control" id="floatingPassword" placeholder=(t "register.password")}}
+    {{#if showError}}
+      {{#if (v-get this 'password' 'isInvalid')}}
+        <span class="error-message">
+          {{v-get this 'password' 'message'}}
+        </span>
+      {{/if}}
+    {{/if}}
   </div>
 
-  <button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Зарегистрироваться</button>
-  {{#link-to "index" class="w-100"}}Назад{{/link-to}}
+  <button class="w-100 btn btn-lg btn-primary mb-3" type="submit">{{t "buttons.register"}}</button>
+  {{#link-to "index" class="w-100"}}{{t "buttons.back"}}{{/link-to}}
 </form>

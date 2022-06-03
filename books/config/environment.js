@@ -26,7 +26,11 @@ module.exports = function(environment) {
     'ember-simple-auth-token': {
       serverTokenEndpoint: 'http://localhost:3000/token',
       refreshAccessTokens: false
-    }
+    },
+
+     i18n: {
+       defaultLocale: 'en'
+     }
   };
 
   ENV.fileUploadURL = ENV.backendURL + '/FileUpload';
