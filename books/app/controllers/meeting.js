@@ -1,7 +1,7 @@
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
 
-export const PER_PAGE = 2;
+export const PER_PAGE = 3;
 
 export default Controller.extend({
   queryParams: ['search', 'page', 'report', 'speaker', 'book'],
@@ -36,10 +36,21 @@ export default Controller.extend({
 
   actions: {
     changeSpeaker(speaker) {
-      this.set('speaker', speaker ? speaker.get('id') : '');
+      this.set('selectedSpeaker', speaker);
     },
     changeBook(book) {
-      this.set('book', book ? book.get('id') : '');
+      this.set('selectedBook', book);
+    },
+
+    searchMeeting(selectedBook, selectedSpeaker, dateMeeting) {
+      this.set('speaker', selectedSpeaker ? selectedSpeaker.id : '');
+      this.set('book', selectedBook ? selectedBook.id : '');
+
+      this.set('dateMeeting', dateMeeting ? dateMeeting : '');
+    },
+
+    changeDateMeeting(dateMeeting) {
+      this.set('dateMeeting', dateMeeting);
     }
   }
 });
