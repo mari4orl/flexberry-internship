@@ -9,6 +9,8 @@
     <title>Книжный клуб Flexberry Foundation</title>
 
     {{content-for "head"}}
+    <link integrity="" rel="stylesheet" href="{{rootURL}}css/bootstrap-select.min.css">
+    <link integrity="" rel="stylesheet" href="{{rootURL}}css/bootstrap-datepicker.css">
 
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/books.css">
@@ -30,7 +32,13 @@
     <script src="{{rootURL}}js/jquery.iframe-transport.js"></script>
     <script src="{{rootURL}}js/jquery.fileupload.js"></script>
     <script src="{{rootURL}}js/jquery.fileupload-process.js"></script>
-    <!-- <script type="text/javascript">
+    <script src="{{rootURL}}bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="{{rootURL}}js/bootstrap-file.js"></script>
+    <script src="{{rootURL}}js/bootstrap-datepicker.min.js"></script>
+    <script src="{{rootURL}}js/bootstrap-datepicker.ru.min.js"></script>
+    <!-- <script src="{{rootURL}}js/bootstrap-select.min.js"></script> -->
+    <script type="text/javascript">
       $(function () {
         $('.datepicker').datepicker({
           clearBtn: true,
@@ -39,7 +47,7 @@
             autoclose: true
         });
       });
-    </script> -->
+    </script>
 
     {{content-for "body-footer"}}
   </body>

@@ -17,7 +17,10 @@ export default Component.extend({
     const self = this;
 
     this.$('.datepicker').datepicker().on('change', function() {
-      get(self, 'changeDateMeeting')(moment($(this).datepicker('getDate')).toISOString());
+      moment.fn.toJSON = function() { return this.format(); }
+      let selectedDateMetting = moment($(this).datepicker('getDate')).toJSON();
+      if (selectedDateMetting === 'Invalid date') {selectedDateMetting = ''}
+      get(self, 'changeDateMeeting')(selectedDateMetting);
     });
   }
 });
