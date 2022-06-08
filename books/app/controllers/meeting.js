@@ -34,10 +34,17 @@ export default Controller.extend({
     return book ? this.get('model.books').findBy('id', book) : null;
   }),
 
+  dateMeeting: computed('meeting', function() {
+    const meeting = this.get('meeting');
+
+    return meeting ? this.get('model.dateMeeting').findBy('dateMeeting', meeting) : null;
+  }),
+
   actions: {
     changeSpeaker(speaker) {
       this.set('selectedSpeaker', speaker);
     },
+
     changeBook(book) {
       this.set('selectedBook', book);
     },
@@ -49,8 +56,8 @@ export default Controller.extend({
       this.set('dateMeeting', dateMeeting ? dateMeeting : '');
     },
 
-    changeDateMeeting(dateMeeting) {
-      this.set('dateMeeting', dateMeeting);
+    changeDateMeeting(date) {
+      this.set('dateMeeting', date);
     }
   }
 });
