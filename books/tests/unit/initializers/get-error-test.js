@@ -1,11 +1,11 @@
 import Application from '@ember/application';
 
-import { initialize } from 'books/initializers/start-application';
+import { initialize } from 'books/initializers/get-error';
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
 import { run } from '@ember/runloop';
 
-module('Unit | Initializer | start-application', function(hooks) {
+module('Unit | Initializer | get-error', function(hooks) {
   setupTest(hooks);
 
   hooks.beforeEach(function() {

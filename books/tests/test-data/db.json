@@ -349,5 +349,14 @@
       "passwordConfirmation": "cedc703a9186ffb6aca3a5f6d945c35499e877a01ecff88711a8fe6762782ae7",
       "id": 3
     }
+  ],
+  "errors": [
+    {
+      "date": "2012-11-30T01:21:00.000Z",
+      "ip": "127.0.0.1",
+      "url": "http://www.example.com/admin/new?sort=desc",
+      "message": "Here goes your error",
+      "id": 1
+    }
   ]
 }
