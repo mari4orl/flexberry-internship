@@ -50,7 +50,7 @@ const getBaseRoute = (req) => {
 
 const isAuthorized = (req) => {
   const baseRoute = getBaseRoute(req);
-  if (req.path === '/users' || req.path === '/token'|| (req.path === '/logs' && req.method === 'POST') || ((baseRoute === 'speakers' || baseRoute === 'books' || baseRoute === 'meetings' || baseRoute === 'reports') && req.method === 'GET')) {
+  if (req.path === '/users' || req.path === '/token'|| req.path === '/errors' || ((baseRoute === 'speakers' || baseRoute === 'books' || baseRoute === 'meetings' || baseRoute === 'reports') && req.method === 'GET')) {
     return 200;
   }
 
@@ -77,6 +77,12 @@ server.use(middlewares)
 // To handle POST, PUT and PATCH you need to use a body-parser
 // You can use the one used by JSON Server
 server.use(jsonServer.bodyParser);
+
+// Adding IP adress of current request to error
+server.use('/errors', function (req, res, next) {
+  req.body.ip = req.ip;
+  next();
+})
 
 server.post('/token', function (req, res) {
   const emailFromBody = req.body.email;

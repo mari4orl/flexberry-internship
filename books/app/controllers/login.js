@@ -15,13 +15,12 @@ export default Controller.extend({
       }
       catch(e) {
         this.send('error', e);
+        const applicationError = get(this, 'applicationError');
+        applicationError.saveError('Error in login user')
       }
     },
 
     error(error, transition) {
-      const applicationError = get(this, 'applicationError');
-      applicationError.saveError('Error in login user')
-
       if (error instanceof Error) {
         return true;
       }

@@ -9,10 +9,10 @@ export default Service.extend({
 
     let newError = this.get('store').createRecord('error',
     {
-      date: 'date',
-      ip: 'ip',
-      url: 'something',
-      message: 'error message'
+      date: new Date().toString(),
+      ip: '',
+      url: window.location.href,
+      message: error
     });
 
     await newError.save();

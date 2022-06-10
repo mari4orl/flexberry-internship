@@ -352,10 +352,10 @@
   ],
   "errors": [
     {
-      "date": "2012-11-30T01:21:00.000Z",
-      "ip": "127.0.0.1",
-      "url": "http://www.example.com/admin/new?sort=desc",
-      "message": "Here goes your error",
+      "date": "Fri Jun 10 2022 12:42:29 GMT+0300 (Москва, стандартное время)",
+      "ip": "::1",
+      "url": "http://localhost:4200/login",
+      "message": "Error in login user",
       "id": 1
     }
   ]
