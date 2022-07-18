@@ -14,11 +14,16 @@ export default Component.extend({
       autoclose: true
     });
 
+    const currentDate = moment(this.get('meetingDate')).toDate();
+    console.log(currentDate);
+
+    $('.datepicker').datepicker('update', currentDate);
+
     const self = this;
 
     this.$('.datepicker').datepicker().on('change', function() {
       moment.fn.toJSON = function() { return this.format(); }
-      let selectedDateMetting = moment($(this).datepicker('getDate')).toJSON();
+      let selectedDateMetting = moment($(this).datepicker('getDate')).format("YYYY-MM-DD");
       if (selectedDateMetting === 'Invalid date') {selectedDateMetting = ''}
       get(self, 'changeDateMeeting')(selectedDateMetting);
     });

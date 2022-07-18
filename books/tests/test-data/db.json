@@ -211,23 +211,23 @@
   ],
   "meetings": [
     {
-      "meetingDate": "2022-05-20T19:00:00+03:00",
+      "meetingDate": "2022-05-20",
       "id": 1
     },
     {
-      "meetingDate": "2022-05-03T19:00:00+03:00",
+      "meetingDate": "2022-05-03",
       "id": 2
     },
     {
-      "meetingDate": "2022-06-20T19:00:00+03:00",
+      "meetingDate": "2022-06-20",
       "id": 3
     },
     {
-      "meetingDate": "2022-07-03T19:00:00+03:00",
+      "meetingDate": "2022-07-03",
       "id": 4
     },
     {
-      "meetingDate": "2022-06-01T00:00:00+03:00",
+      "meetingDate": "2022-06-01",
       "id": 5
     }
   ],

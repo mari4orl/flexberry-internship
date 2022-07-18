@@ -19,10 +19,13 @@ export default Route.extend({
     },
     report: {
       refreshModel: true
+    },
+    meetingDate: {
+      refreshModel: true
     }
   },
 
-  model({ search, page, speaker, book, report }) {
+  model({ search, page, speaker, book, report, meetingDate }) {
     const query = {
       _page: page,
       _limit: PER_PAGE
@@ -42,6 +45,10 @@ export default Route.extend({
 
     if (search) {
       query.q = search;
+    }
+
+    if (meetingDate) {
+      query.meetingDate = meetingDate;
     }
 
     // return this.get('store').findAll('meeting');
